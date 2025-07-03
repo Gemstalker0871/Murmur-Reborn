@@ -103,14 +103,9 @@ const NotificationsPage = () => {
                         <div className="flex items-start gap-3">
                           <div className="avatar mt-1 size-10 rounded-full">
                             <img
-  src={
-    notification.recipient?.profilePic
-      ? `http://localhost:5001${notification.recipient.profilePic}`
-      : "/default-avatar.png"
-  }
-  alt={notification.recipient.fullName}
-  className="w-10 h-10 object-cover rounded-full"
-/>
+                              src={notification.recipient.profilePic}
+                              alt={notification.recipient.fullName}
+                            />
                           </div>
                           <div className="flex-1">
                             <h3 className="font-semibold">{notification.recipient.fullName}</h3>

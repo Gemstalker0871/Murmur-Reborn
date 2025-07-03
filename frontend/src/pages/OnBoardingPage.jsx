@@ -63,19 +63,19 @@ const OnBoardingPage = () => {
 
           {/* Profile Pic Section */}
           <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="w-32 h-32 rounded-full overflow-hidden bg-base-300 flex items-center justify-center">
-              {formState.profilePic ? (
-                <img
-                  src={`http://localhost:5001${formState.profilePic}`}
-                  alt="Profile Preview"
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <div className="flex items-center justify-center h-full">
-                  <CameraIcon className="size-12 text-base-content opacity-40" />
-                </div>
-              )}
-            </div>
+            <div className="size-32 rounded-full bg-base-300 overflow-hidden">
+                {formState.profilePic ? (
+                  <img
+                    src={formState.profilePic}
+                    alt="Profile Preview"
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="flex items-center justify-center h-full">
+                    <CameraIcon className="size-12 text-base-content opacity-40" />
+                  </div>
+                )}
+              </div>
 
             {/* Generate Random Avatar */}
             <div className="flex items-center gap-2">
