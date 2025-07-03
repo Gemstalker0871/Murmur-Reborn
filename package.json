@@ -1,0 +1,22 @@
+{
+  "name": "murmur-reborn",
+  "version": "1.0.0",
+  "description": "A full-stack chat and social platform with real-time messaging, friend requests, and notifications.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gemstalker0871/Murmur-Reborn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gemstalker0871/Murmur-Reborn/issues"
+  },
+  "homepage": "https://github.com/Gemstalker0871/Murmur-Reborn#readme"
+}
